@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"learning.go/basics/ifelse"
+	"learning.go/basics/switchstatement"
 )
 
 func main() {
@@ -23,5 +24,5 @@ func main() {
 
 	// control structure
 	ifelse.IfElse(15)
-	fmt.Printf("user age: %d\n", 2)
+	switchstatement.Switch(3)
 }
