@@ -6,6 +6,7 @@ import (
 
 	"learning.go/basics/ifelse"
 	"learning.go/basics/switchstatement"
+	"learning.go/basics/typeconversion"
 )
 
 func main() {
@@ -25,4 +26,7 @@ func main() {
 	// control structure
 	ifelse.IfElse(15)
 	switchstatement.Switch(3)
+
+	// types conversion - basics
+	typeconversion.TypeConversion()
 }
