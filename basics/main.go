@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"learning.go/basics/arrays"
 	"learning.go/basics/functions"
 	"learning.go/basics/ifelse"
 	"learning.go/basics/switchstatement"
@@ -46,4 +47,7 @@ func main() {
 	fmt.Printf("val2: %s\n", val2)
 
 	fmt.Println("====================== FUNCTIONS, TestFunc======================")
+
+	// arrays
+	arrays.Arrays()
 }
