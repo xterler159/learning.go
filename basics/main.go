@@ -7,6 +7,7 @@ import (
 	"learning.go/basics/arrays"
 	"learning.go/basics/functions"
 	"learning.go/basics/ifelse"
+	"learning.go/basics/slices"
 	"learning.go/basics/switchstatement"
 	"learning.go/basics/typeconversion"
 )
@@ -50,4 +51,7 @@ func main() {
 
 	// arrays
 	arrays.Arrays()
+
+	// slices
+	slices.Slices()
 }

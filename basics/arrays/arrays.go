@@ -20,7 +20,7 @@ func Arrays() {
 	fmt.Println("t at index 1:", t[1])
 	fmt.Println("t at index 0:", t[0])
 	fmt.Println("t[lastIndexOfT]:", t[lastIndexOfT])
-	fmt.Println("lastIndexOfT", lastIndexOfT)
+	fmt.Println("lastIndexOfT:", lastIndexOfT)
 	fmt.Println("arr2:", arr2)
 	fmt.Println("arr3:", arr3)
 	fmt.Println("arr3[1]:", arr3[1])
