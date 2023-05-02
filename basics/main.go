@@ -8,6 +8,7 @@ import (
 	"learning.go/basics/functions"
 	"learning.go/basics/ifelse"
 	"learning.go/basics/loops"
+	"learning.go/basics/rangestatement"
 	"learning.go/basics/slices"
 	"learning.go/basics/switchstatement"
 	"learning.go/basics/typeconversion"
@@ -58,4 +59,7 @@ func main() {
 
 	// loops
 	loops.Loops()
+
+	// range
+	rangestatement.RangeStatement()
 }
