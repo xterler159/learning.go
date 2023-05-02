@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"learning.go/basics/arrays"
+	"learning.go/basics/errorhandling"
 	"learning.go/basics/functions"
 	"learning.go/basics/ifelse"
 	"learning.go/basics/loops"
@@ -62,4 +63,7 @@ func main() {
 
 	// range
 	rangestatement.RangeStatement()
+
+	// errors handling
+	errorhandling.ErrorHandling()
 }
