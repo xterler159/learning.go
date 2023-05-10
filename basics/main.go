@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"learning.go/basics/arrays"
+	"learning.go/basics/deferstatement"
 	"learning.go/basics/errorhandling"
 	"learning.go/basics/functions"
 	"learning.go/basics/ifelse"
@@ -66,4 +67,7 @@ func main() {
 
 	// errors handling
 	errorhandling.ErrorHandling()
+
+	// defer
+	deferstatement.DeferStatement()
 }
