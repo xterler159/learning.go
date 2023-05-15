@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	occ, lines, err := goplace.FindReplaceFile("./tests.txt", "hello", "ok")
+	occ, lines, err := goplace.FindReplaceFile("./test.txt", "hello", "ok")
 
 	if err != nil {
 		fmt.Println("Error while calling FindReplaceFile function:", err)

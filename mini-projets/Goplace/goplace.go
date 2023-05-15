@@ -48,3 +48,14 @@ func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
 
 	return wordOccurence, wordOccurenceLines, nil
 }
+
+// @TODO work this func
+// param line: ligne à traiter
+// param old: ancien mot
+// param new: nouveau mot
+// return found: vrai si au moins une occurence est trouvée
+// return res: résultat de remplacement (res == line si aucun changement !)
+// return occ: nombre d'occurences de old dans la ligne
+func ProcessLine(line, old, new string) (found bool, res string, occ int) {
+	return true, "test", 3
+}

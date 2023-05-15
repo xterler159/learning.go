@@ -7,3 +7,7 @@
 ### Exemples de fonctionnement dans le terminal:
 
 ![](./terminal-example.png)
+
+### ProcessLine func à implementer:
+
+![](./processline.png)
