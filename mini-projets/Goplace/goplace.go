@@ -6,22 +6,16 @@ import (
 	"strings"
 )
 
+const (
+	FILE_NAME string = "text.txt"
+)
+
 // param src: nom de fichier source
 // param old: ancien mot
 // param new: nouveau mot
 // return occ: nombre d'occurences de old
 // return lines: slice des numéros de lignes ou old a été trouvé
 // return err: error de la fonction
-
-// func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
-// 	scanner := bufio.NewScanner("test.txt")
-// 	fmt.Println(scanner)
-// }
-
-const (
-	FILE_NAME string = "text.txt"
-)
-
 func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
 	wordOccurence := 0
 	fileLines := 0
@@ -54,13 +48,3 @@ func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
 
 	return wordOccurence, wordOccurenceLines, nil
 }
-
-// param line: linge à traiter
-// param old: ancien mot
-// param new: nouveau mot
-// return found: vrai si au moins une occurence est trouvée
-// return result: résultat de remplacement (res == line)
-// return occ: nombre d'occurence de old dans la ligne
-// func ProcessLine(line, old, new string) (found bool, result string, occ int) {
-
-// }
