@@ -7,14 +7,11 @@ import (
 )
 
 func main() {
-	_, err := goplace.FindReplaceFile("./tests.txt", "hello", "ok")
+	occ, lines, err := goplace.FindReplaceFile("./tests.txt", "hello", "ok")
 
 	if err != nil {
 		fmt.Println("Error while calling FindReplaceFile function:", err)
+		return
 	}
 
-	// fmt.Println("occ:", occ)
-
-	// count := strings.Count("hello hello hello", "hello")
-	// fmt.Println(count)
 }

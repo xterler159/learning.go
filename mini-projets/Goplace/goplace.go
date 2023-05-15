@@ -2,7 +2,6 @@ package goplace
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strings"
 )
@@ -23,27 +22,37 @@ const (
 	FILE_NAME string = "text.txt"
 )
 
-func FindReplaceFile(src, old, new string) (occ int, err error) {
-	occurence := 0
+func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
+	wordOccurence := 0
+	fileLines := 0
+	wordOccurenceLines := []int{}
+
+	textLowerCased := ""
 	file, err := os.Open(src)
 
-	defer file.Close()
-
 	if err != nil {
-		return 0, err
+		return 0, wordOccurenceLines, err
 	}
+
+	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
 
 	for scanner.Scan() {
+		fileLines++
 		text := scanner.Text()
-		textLowerCased := strings.ToLower(text)
-		occurence += strings.Count(textLowerCased, old)
+
+		// managing new lines
+		textLowerCased += text + "\n"
+		wordOccurence += strings.Count(textLowerCased, old)
+
+		// getting the number of occurence lines
+		if strings.Contains(strings.ToLower(text), old) {
+			wordOccurenceLines = append(wordOccurenceLines, fileLines)
+		}
 	}
 
-	fmt.Println("occurence:", occurence)
-
-	return occurence, nil
+	return wordOccurence, wordOccurenceLines, nil
 }
 
 // param line: linge à traiter
