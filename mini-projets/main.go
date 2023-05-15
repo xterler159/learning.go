@@ -14,4 +14,6 @@ func main() {
 		return
 	}
 
+	fmt.Println("occ:", occ)
+	fmt.Println("lines:", lines)
 }
